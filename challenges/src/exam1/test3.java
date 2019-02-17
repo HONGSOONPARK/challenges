@@ -62,22 +62,13 @@ class Solution {
         }
         System.out.println("\n필요 스코빌지수 : "+K+" ]===============");
 
-        int count = 0;
-
-        int[] cut = new int[scoville.length];
-
         for(int n : scoville){
         	if(min > n){
         		min = n;
         		s_min = n+1;
         		answer++;
         	}
-        	if(n >= K){
-        		count++;
-        	}
         }
-
-//        System.out.println(min + " // " +s_min + " // count : "+count+" // answer : "+answer);
 
         System.out.println("가장 작은것 : "+min);
         System.out.println("두번째 작은것 : "+s_min);
