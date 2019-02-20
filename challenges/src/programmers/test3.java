@@ -1,4 +1,4 @@
-package exam1;
+package programmers;
 
 
 /*문제 설명
@@ -73,7 +73,7 @@ class Solution {
         System.out.println("가장 작은것 : "+min);
         System.out.println("두번째 작은것 : "+s_min);
         System.out.println("위에 두개 섞은 것 : "+(min + (2 * s_min)));
-        System.out.println("테스트중");
+        System.out.println("테스트중2");
 
 
 
