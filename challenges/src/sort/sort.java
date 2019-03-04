@@ -11,22 +11,23 @@ public class sort {
 
 		int temp = 0;
 
-		for(int i = 0; i < select.length -1 ; i++){
+
+		for(int i = 0; i < select.length-1; i++){
 			int min = i;
-			for(int l = i+1; l < select.length; l++){
-				if(select[l] < select[min]){
+			for(int l=i+1; l<select.length; l++){
+				if(select[min] < select[l]){
 					min = l;
 				}
 			}
-			temp = select[i];
-			select[i] = select[min];
-			select[min] = temp;
+			temp = select[min];
+			select[min] = select[i];
+			select[i] = temp;
 		}
 
 
-		for(int i = bubble.length - 1; i > 0; i--){
-			for(int l = 0; l < i; l++){
-				if(bubble[l] > bubble[i]){
+		for(int i = bubble.length -1; i >0;i--){
+			for(int l = 0; l<i; l++){
+				if(bubble[l] < bubble[i]){
 					temp = bubble[l];
 					bubble[l] = bubble[i];
 					bubble[i] = temp;
@@ -35,13 +36,13 @@ public class sort {
 		}
 
 
-
-		for(int i = 1; i < insert.length; i++){
-			int min = insert[i];
-			for(int l=i-1; l>=0 && insert[l] > min; l--){
+		for(int i=1; i < insert.length; i++){
+			int key = insert[i];
+			for(int l = i-1; l>=0 && insert[l]>key; l--){
 				insert[l+1] = insert[l];
-				insert[l] = min;
+				insert[l] = key;
 			}
+
 
 		}
 
