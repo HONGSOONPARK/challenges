@@ -18,11 +18,6 @@ public class game369 {
 
 //		System.out.println( Math.round(Math.pow(10,(int) Math.log10(100))));
 
-
-
-
-		String c = "";
-
 		for(int i = 1; i<=num; i++){
 
 			String a = String.valueOf(i);
